@@ -1,0 +1,138 @@
+<@charset"UTF-8";>
+
+body {
+  font-family: "HiraginoSans-W3","游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+  margin: 0;
+}
+header {
+ height: 130px;
+ width: 100%;
+ background-color: black;
+ position :fixed;
+ top: 0;
+ z-index: 10;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-size: 20px;
+}
+.header-left {
+ float: left;
+ width: 15%;
+ height: 130px;
+ display: inline-block;
+}
+.logo {
+  width: 115px;
+  height: 115px;
+}
+.header-right {
+ height: 130px;
+ width: 17%;
+ float: right;
+ color: #ffd400;
+ padding-right: 10px;
+ display: inline-block;
+}
+.menu{
+  float: left;
+  color: white;
+  list-style: none;
+  margin-top: 80px;
+  width: 60%;
+  display: inline-block;
+
+}
+.menu li {
+  color: white;
+  float: left;
+  margin: 5px 20px;
+  font-size: 20px;
+}
+.menu a{
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+.menu a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #ffd400;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+.menu a:hover::after{
+  width: 100%;
+}
+.contents {
+  height: 560px;
+  width: 100%;
+  margin-top: 130px;
+  text-align: center;
+}
+.pic {
+  height: 500px;
+  width: 800px;
+  margin: 30px;
+}
+.sentense {
+  padding: 0 50px;
+  line-height: 45px;
+}
+.sentense h1 {
+  border-bottom: solid 3px black;
+}
+.sns {
+  text-align: center;
+  height: 200px;
+}
+.sns h1 {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: bold;
+  padding-right: 50px;
+  vertical-align: top;
+}
+.pic2 {
+  width: 115px;
+  height: 115px;
+  display: inline-block;
+  margin: 15px;
+
+}
+footer {
+  height: 160px;
+  width: 100%;
+  background-color: black;
+}
+.footer-left {
+  display: inline-block;
+  float: left;
+  height: 115px;
+}
+.footer-right {
+  display: inline-block;
+  color: white;
+  float: right;
+  margin: 10px;
+  opacity: 0.7;
+}
+
+.f-bottom  {
+  float: left;
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
